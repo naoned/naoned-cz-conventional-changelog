@@ -1,6 +1,6 @@
 {
   "name": "naoned-cz-conventional-changelog",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Commitizen adapter following the Naoned git convention.",
   "main": "index.js",
   "scripts": {
