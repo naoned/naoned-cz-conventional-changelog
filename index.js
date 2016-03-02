@@ -48,8 +48,8 @@ module.exports = {
           name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)',
           value: 'style'
         }, {
-          name: 'refactor: A code change that neither fixes a bug or adds a feature',
-          value: 'refactor'
+          name: 'refact: A code refactor that neither fixes a bug or adds a feature',
+          value: 'refact'
         }, {
           name: 'perf:     A code change that improves performance',
           value: 'perf'
@@ -57,8 +57,8 @@ module.exports = {
           name: 'test:     Adding missing tests',
           value: 'test'
         }, {
-          name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation',
-          value: 'chore'
+          name: 'misc:    Changes that didn\'t match any other categories\n            (Change to auxiliary tools and libraries, change to the build process, etc...)',
+          value: 'misc'
         }]
       }, {
         type: 'input',
