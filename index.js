@@ -99,6 +99,7 @@ module.exports = {
       var body = wrap(answers.body, wrapOptions);
       var footer = wrap(answers.footer, wrapOptions);
 
+      console.error = function() {};
       commit(head + '\n\n' + body + '\n\n' + footer);
     });
   }
