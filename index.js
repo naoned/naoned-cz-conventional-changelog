@@ -99,7 +99,8 @@ module.exports = {
       var body = wrap(answers.body, wrapOptions);
       var footer = wrap(answers.footer, wrapOptions);
 
-      console.error = function() {};
+      console.error = function() {}; // Kills commitizen console.error because our git hooks will display the errors
+      console.log = function() {}; // Kills the console.log of our process because it will be catched and outputed by commitizen process.stdout.write
       commit(head + '\n\n' + body + '\n\n' + footer);
     });
   }
